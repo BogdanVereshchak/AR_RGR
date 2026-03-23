@@ -22,7 +22,7 @@ AR_Lab02_UnityBasics_BurstDebugInformation_DoNotShip/
 **/il2cppOutput/
 **/*.apk
 **/*.aab
-
+ProfilerCaptures
 # Файли IDE
 .vs/
 .idea/
