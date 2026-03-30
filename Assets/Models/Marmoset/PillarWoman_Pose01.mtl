@@ -1,0 +1,84 @@
+# Blender 4.4.0 MTL File: 'PillarWoman_ARP.blend'
+# www.blender.org
+
+newmtl Eyes_Cornea
+Ns 20.000006
+Ka 1.000000 1.000000 1.000000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+
+newmtl PillarWoman_Body
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl PillarWoman_Clothes
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Ns C:/Pillarwoman_Clothes_Roughness.tga
+map_refl C:/Pillarwoman_Clothes_Metallic.tga
+
+newmtl PillarWoman_Eyelashes
+Ns 10.717731
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/PillarWoman_Eyelashes.tga
+map_d C:/PillarWoman_Eyelashes.tga
+
+newmtl PillarWoman_Eyes
+Ka 1.000000 1.000000 1.000000
+Kd 0.550000 0.550000 0.550000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Ns C:/PillarWoman_Eyes_Roughness.tga
+map_Bump -bm 1.000000 C:/PillarWoman_Eyes_Normal.tga
+
+newmtl PillarWoman_Hair
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.792492 0.792773 0.793530
+Ks 0.636364 0.636364 0.636364
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_d C:/PillarWoman_Hair_opacity.tga
+
+newmtl PillarWoman_Head
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl eyeshadow
+Ns 20.000006
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/eyeshadow.tga
+map_d C:/eyeshadow.tga

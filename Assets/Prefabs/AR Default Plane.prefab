@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5726470722685926940}
   - component: {fileID: 3737292680317026135}
   - component: {fileID: 5517784357599978163}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: AR Default Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 6021658626902609373}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.85070515, y: 0.6508856, z: 0.44826794}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -120,7 +120,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fb597692931e8de4e9fb1d49b46f070a, type: 2}
+  - {fileID: 2100000, guid: fd5e090a9a8b7b74d980c9125666f8d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

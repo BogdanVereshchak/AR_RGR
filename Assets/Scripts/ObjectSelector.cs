@@ -13,7 +13,6 @@ public class ObjectSelector : MonoBehaviour
 
     void Update()
     {
-        // Логіка для Touch (телефон)
         if (Input.touchCount == 1)
         {
             Touch touch = Input.GetTouch(0);
@@ -23,7 +22,6 @@ public class ObjectSelector : MonoBehaviour
                 TrySelectObject(touch.position);
             }
         }
-        // Логіка для мишки (редактор)
         else if (Input.GetMouseButtonDown(0))
         {
             if (EventSystem.current.IsPointerOverGameObject()) return;
@@ -38,7 +36,6 @@ public class ObjectSelector : MonoBehaviour
         {
             GameObject hitObject = hit.collider.gameObject;
 
-            // Якщо ми натиснули на той самий об'єкт — нічого не робимо
             if (selectedObject == hitObject) return;
 
             DeselectCurrent();
@@ -46,7 +43,6 @@ public class ObjectSelector : MonoBehaviour
         }
         else
         {
-            // Якщо натиснули в порожнечу — знімаємо виділення
             DeselectCurrent();
         }
     }
@@ -58,7 +54,6 @@ public class ObjectSelector : MonoBehaviour
 
         if (selectedRenderer != null)
         {
-            // Беремо колір з головного матеріалу
             originalColor = selectedRenderer.material.color;
             selectedRenderer.material.color = highlightColor;
         }
@@ -85,7 +80,6 @@ public class ObjectSelector : MonoBehaviour
         return results.Count > 0;
     }
 
-    // Допоміжний метод для зміни меша, якщо знадобиться
     public void ChangeSelectedMesh(Mesh newMesh)
     {
         if (selectedObject == null) return;

@@ -1,0 +1,89 @@
+@Sub SRSurface = SRSurfaceNormalMap
+    Normal Map = @Tex file "../../Assets/Textures/PillarWoman_Hair_Normal.tga" fileFull "D:/RyanReos_3DCG/CGTrader/RyanReos_PillarWoman/Assets/Textures/PillarWoman_Hair_Normal.tga" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Scale & Bias = 1
+    Flip X = 0
+    Flip Y = 1
+    Flip Z = 0
+    Generate Z = 0
+    Object Space = 0
+@End
+
+@Sub SRAlbedo = SRAlbedoMap
+    Albedo Map = @Tex file "../../Assets/Textures/PillarWoman_Hair_BaseColor.tga" fileFull "D:/RyanReos_3DCG/CGTrader/RyanReos_PillarWoman/Assets/Textures/PillarWoman_Hair_BaseColor.tga" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Color = 1 1 1
+@End
+
+@Sub SRDiffusion = SRDiffusionLambertian
+@End
+
+@Sub SRTransmission = SRTransmissionSubsurfaceDiffusion
+    Scatter Map = nil
+    Scatter Depth (mm) = 1
+    Scatter Color = 0.621333 0.671465 0.746315
+    Fuzz Map = nil
+    Fuzz = 2
+    Fuzz Color = 0.462925 0.600539 0.611803
+    Mask Fuzz with Gloss = 1
+    Use Translucency = 0
+    Mask Map = nil
+    Channel;Mask = 0
+    Mask = 1
+    Invert;Mask = 0
+    Use Albedo Alpha = 1
+@End
+
+@Sub SRReflection = SRReflectionAnisotropic
+    Direction Map = @Tex file "../../Assets/Textures/PillarWoman_Hair_direction.tga" fileFull "D:/RyanReos_3DCG/CGTrader/RyanReos_PillarWoman/Assets/Textures/PillarWoman_Hair_direction.tga" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Scale & Bias = 1
+    Swap X/Y Direction = 0
+    Anisotropy = 1
+    Anisotropy Direction = 0
+@End
+
+@Sub SRMicrosurface = SRMicrosurfaceRoughnessMap
+    Roughness Map = nil
+    Channel = 0
+    Roughness = 0.5
+    Invert;roughness = 0
+@End
+
+@Sub SRReflectivity = SRReflectivitySpecularMap
+    Specular Map = @Tex file "../../Assets/Textures/PillarWoman_Hair_Specular.tga" fileFull "D:/RyanReos_3DCG/CGTrader/RyanReos_PillarWoman/Assets/Textures/PillarWoman_Hair_Specular.tga" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel;specular = 4
+    Intensity = 1
+    Color = 1 1 1
+    Fresnel = 1
+    Color;fresnel = 0.534775 0.534775 0.534775
+    Conserve Energy = 1
+@End
+
+@Sub SROcclusion = SROcclusionMap
+    Occlusion Map = @Tex file "../../Assets/Textures/PillarWoman_Hair_AO.tga" fileFull "D:/RyanReos_3DCG/CGTrader/RyanReos_PillarWoman/Assets/Textures/PillarWoman_Hair_AO.tga" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel;occlusion = 0
+    Occlusion = 1
+    UV Set = 0
+    Vertex Channel = 0
+    Cavity Map = nil
+    Channel;cavity = 0
+    Diffuse Cavity = 1
+    Specular Cavity = 1
+@End
+
+@Sub SRTransparency = SRTransparencyDither
+    Use Albedo Alpha = 1
+    Alpha Map = @Tex file "../../Assets/Textures/PillarWoman_Hair_opacity.tga" fileFull "D:/RyanReos_3DCG/CGTrader/RyanReos_PillarWoman/Assets/Textures/PillarWoman_Hair_opacity.tga" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel = 0
+    Alpha = 1
+@End
+
+@Sub SRMerge = SRMerge
+    Texture Tiling = 1
+    Tile U = 1
+    Offset U = 0
+    Tile V = 1
+    Offset V = 0
+    Wrap = 1
+    Aniso = 2
+    Filter = 1
+@End
+
