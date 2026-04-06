@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Anna.unity
     guid: 932a118cba1db844fb955ce2551c2e83
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Skorokhid.unity
     guid: 520113f022bc95b42b3988f2f0ab3e6b
+  - enabled: 1
+    path: Assets/Scenes/Kushchyk.unity
+    guid: d954e4f75612cc84d98baa084ae1aba1
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 86df9bda71d1749428cfa1596a88e543, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
